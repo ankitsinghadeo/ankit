@@ -1,0 +1,331 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background: url('BSE-logo.jpeg') repeat center center fixed; /* Full background covered with repeated BSE logo */
+    background-size: 150px 150px; /* Adjust the size of the logo */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Login Page */
+.login-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.login-container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 300px;
+}
+
+.login-container h2 {
+    color: #0077cc;
+    margin-bottom: 20px;
+}
+
+.login-container label {
+    font-size: 16px;
+    margin-top: 10px;
+    display: block;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-container button {
+    width: 100%;
+    background-color: #0077cc;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-container button:hover {
+    background-color: #005fa3;
+}
+
+#loginPage {
+    display: block;
+}
+
+/* Main Content */
+#mainContent {
+    display: none;
+}
+
+/* Header */
+.header {
+    width: 100%;
+    background-color: rgba(0, 119, 204, 0.9); /* Semi-transparent blue */
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-bottom: 3px solid #005fa3; /* Decorative border */
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.header h1 {
+    font-size: 28px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    animation: colorShift 5s infinite;
+}
+
+@keyframes colorShift {
+    0%, 100% {
+        color: #ff6347;
+    }
+    50% {
+        color: #0077cc;
+    }
+}
+
+/* Main Content Container */
+.container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    border: 3px solid #0077cc; /* Bold border */
+    overflow: hidden;
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out; /* Fade-in animation */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h2 {
+    color: #0077cc;
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+/* Style for BSE Logo in Content */
+.bse-logo {
+    display: block;
+    margin: 20px auto;
+    max-width: 200px; /* Adjust size of the content logo */
+    height: auto;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.payment-details {
+    margin: 20px 0;
+    padding: 20px;
+    border: 2px dashed #0077cc;
+    border-radius: 15px;
+    background-color: rgba(240, 250, 255, 0.95); /* Semi-transparent blue background */
+    box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.payment-details img {
+    max-width: 200px;
+    height: auto;
+    margin-top: 15px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.payment-details .upi-id {
+    color: #333;
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+/* New 100+ design elements */
+button, .btn {
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover, .btn:hover {
+    background-color: #005fa3;
+    transform: translateY(-5px);
+}
+
+/* Adding Card Styles */
+.card {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+/* Add hover effects for images */
+img:hover {
+    opacity: 0.8;
+    transform: scale(1.05);
+}
+
+/* Add Gradients to Buttons */
+.gradient-button {
+    background: linear-gradient(45deg, #ff6347, #0077cc);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.gradient-button:hover {
+    background: linear-gradient(45deg, #005fa3, #ff6347);
+}
+
+/* Shadow Effects */
+.shadow-card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.shadow-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Add Border Effects */
+.bordered {
+    border: 2px solid #0077cc;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.bordered:hover {
+    border: 2px solid #005fa3;
+}
+
+/* Add Fancy Text Animations */
+.fancy-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0077cc;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    animation: textAnimation 3s infinite;
+}
+
+@keyframes textAnimation {
+    0% {
+        color: #ff6347;
+    }
+    50% {
+        color: #0077cc;
+    }
+    100% {
+        color: #ff6347;
+    }
+}
+
+/* Hover Effects on Links */
+a {
+    color: #0077cc;
+    text-decoration: none;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+a:hover {
+    color: #ff6347;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Section with Animated Background */
+.section {
+    background: linear-gradient(90deg, #0077cc, #005fa3);
+    padding: 50px;
+    border-radius: 10px;
+    animation: gradientAnimation 5s infinite;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background: linear-gradient(90deg, #0077cc, #005fa3);
+    }
+    50% {
+        background: linear-gradient(90deg, #ff6347, #005fa3);
+    }
+    100% {
+        background: linear-gradient(90deg, #0077cc, #005fa3);
+    }
+}
+
+/* Add Icons */
+.icon {
+    font-size: 24px;
+    margin: 10px;
+    color: #0077cc;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.icon:hover {
+    color: #ff6347;
+    transform: scale(1.1);
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    margin-top: 30px;
+    border-top: 3px solid #0077cc;
+}
+
+.footer p {
+    margin: 0;
+}
